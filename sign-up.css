@@ -1,0 +1,498 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    background-image: url("images/technology\ bg.jpg");
+    /* background-color: black; */
+    background-size: cover;
+
+}
+
+/* ==================================== header ====================================== */
+header {
+    background-color: #24243956;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0px;
+    box-shadow: 0 0 20px 4px black;
+    z-index: 2;
+
+}
+
+header .right-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.right-container .search {
+    border: solid 2px white;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search input {
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+
+}
+
+.right-container .search:hover {
+    border: solid 2px orangered;
+    transition: 0.8s;
+
+
+}
+
+.search input::placeholder {
+    color: white;
+    opacity: 0.8;
+    text-transform: capitalize;
+
+
+}
+
+.search button {
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+    padding-right: 10px;
+    cursor: pointer;
+
+}
+
+.search button:hover {
+    color: orangered;
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+.right-container .sign-in {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sign-in button {
+    background: none;
+    outline: none;
+    border: none;
+    color: orangered;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.sign-in button i {
+    font-size: 25px;
+}
+
+.sign-in a {
+    color: orangered;
+    text-decoration: none;
+    font-weight: 900;
+    text-transform: uppercase;
+    display: inline;
+    letter-spacing: 1px;
+
+}
+
+
+
+.sign-in:hover {
+    transform: translateX(8px);
+    transition: 0.5s;
+}
+
+
+header .left-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.left-container h1 a {
+    text-transform: uppercase;
+    font-weight: 900px;
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 3px;
+
+}
+
+
+.left-container div a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 8px 10px;
+    /* background-color: blue; */
+
+}
+
+.left-container div a:hover {
+    /* background-color: #393581; */
+    color: orangered;
+    transition: 1s;
+    /* transform: translateY(-4px); */
+}
+
+/* ==================================== body ====================================== */
+
+
+section {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section .container {
+    margin-top: 80px;
+    background-color: #ffffff15;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    height: 400px;
+    width: 600px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px black;
+
+}
+
+.container i {
+    color: white;
+}
+
+.container .titles a {
+    text-decoration: underline;
+    text-transform: capitalize;
+    color: white;
+    font-weight: bold;
+}
+
+.container .titles p {
+    margin-top: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+.container .titles h2 {
+    margin-top: 20px;
+    color: white;
+    text-transform: capitalize;
+
+}
+
+.container .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 80%;
+
+}
+
+.container .names {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+
+}
+
+.container .names div,
+.container .info .enters {
+    border: solid white 2px;
+    margin-right: 10px;
+    padding: 12px 10px;
+    border-radius: 30px;
+
+
+}
+
+.container input {
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+
+
+}
+
+.container input::placeholder {
+    color: white;
+    opacity: 0.8;
+    text-transform: capitalize;
+
+}
+
+.container .info .enters {
+    border: solid white 2px;
+    padding: 12px 10px;
+    border-radius: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.container .info input {
+    width: 100%;
+}
+
+
+
+.container .info .remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+    padding: 0 10px;
+
+}
+
+.container .remember div {
+    display: flex;
+    align-items: center;
+    /* background-color: blue; */
+    color: white;
+    font-size: 12px;
+    gap: 10px;
+}
+
+.container .info .remember p {
+    white-space: nowrap;
+}
+
+.info .remember a {
+    color: white;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.container .info .remember #contact:hover {
+    text-decoration: underline;
+}
+
+
+.container button {
+    color: white;
+    border: none;
+    padding: 12px 100px;
+    border-radius: 30px;
+    background-color: orangered;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+
+}
+
+.container button:hover {
+    background-color: #3131c0;
+    transition: 0.8s;
+}
+
+.animation {
+    opacity: 0;
+    /* transform: translateY(-60px); */
+    transform: scale(0.5);
+    animation: move-side 0.4s linear forwards;
+}
+
+@keyframes move-side {
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* ==================================== footer ====================================== */
+
+
+
+
+footer .all {
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    /* background-color: #242439; */
+    padding: 40px 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px 4px black;
+
+}
+
+.all .left {
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.all .left h1 a {
+    text-transform: uppercase;
+    font-weight: 900px;
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 3px;
+}
+
+.all .left p {
+    font-size: 13px;
+}
+
+.all .center {
+    display: flex;
+
+}
+
+.all .center li {
+    display: inline;
+    margin: 10px;
+
+}
+
+.all .center li a {
+    font-size: 15px;
+    color: gray;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+
+.all .center li :hover {
+    color: orangered;
+    transition: 0.5s;
+}
+
+.all .right button {
+    margin: 5px;
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+    padding-right: 10px;
+    cursor: pointer;
+
+}
+
+.all button i {
+    font-size: 25px;
+
+}
+
+.all .right button :hover {
+    color: orangered;
+    transform: translateY(-4px);
+    transition: 0.5s;
+
+
+}
+
+@media screen and (max-width : 740px) {
+    header {
+        position: relative;
+    }
+
+    .left-container li {
+        display: flex;
+
+    }
+
+    header .left-container {
+        margin-top: 10px;
+        flex-direction: column;
+        /* background-color: #fd8b39; */
+        flex-basis: 100%;
+
+    }
+
+    .left-container h1 a {
+        text-transform: uppercase;
+        font-weight: 900px;
+        color: white;
+        letter-spacing: 1px;
+        text-decoration: none;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    .left-content {
+        /* background-color: red; */
+        width: 80%;
+        height: 100%;
+        margin-top: 35%;
+
+    }
+
+    .right-content {
+        display: none;
+    }
+
+    .right-container {
+        width: 100%;
+        position: absolute;
+
+    }
+
+    .right-container .sign-in {
+        position: absolute;
+        right: 5%;
+    }
+
+    .right-container .search {
+        position: absolute;
+        left: 0%;
+        width: 150px;
+    }
+
+    footer .all {
+        height: 330PX;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .all .center li {
+        display: block;
+
+    }
+}
+
+@media screen and (min-width:740px) and (max-width: 1080px) {}

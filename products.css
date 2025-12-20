@@ -1,0 +1,483 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    background-image: url("images/technology\ bg.jpg");
+    /* background-color: black; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+/* ======================================== header =================================================== */
+
+
+
+header {
+    background-color: #24243956;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0px;
+    box-shadow: 0 0 20px 4px black;
+    z-index: 2;
+
+
+}
+
+header .right-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.right-container .search {
+    border: solid 2px white;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search input {
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+
+}
+
+.right-container .search:hover {
+    border: solid 2px orangered;
+    transition: 0.8s;
+
+
+}
+
+.search input::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+
+.search button {
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+    padding-right: 10px;
+    cursor: pointer;
+
+}
+
+.search button:hover {
+    color: orangered;
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+.right-container .sign-in {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sign-in button {
+    background: none;
+    outline: none;
+    border: none;
+    color: orangered;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.sign-in button i {
+    font-size: 25px;
+
+}
+
+.sign-in a {
+    color: orangered;
+    text-decoration: none;
+    font-weight: 900;
+    text-transform: uppercase;
+    display: inline;
+
+}
+
+.sign-in:hover {
+    transform: translateX(8px);
+    transition: 0.5s;
+}
+
+
+header .left-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.left-container h1 a {
+    text-transform: uppercase;
+    font-weight: 900px;
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 3px;
+
+}
+
+.left-container div a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 8px 10px;
+    /* background-color: blue; */
+
+}
+
+.left-container div a:hover {
+    /* background-color: #393581; */
+    color: orangered;
+    transition: 1s;
+    /* transform: translateY(-4px); */
+}
+
+.animation {
+    opacity: 0;
+    transform: translateY(-40px);
+    animation: move-side 0.7s linear forwards;
+}
+
+@keyframes move-side {
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+/* ======================================== body =================================================== */
+
+
+
+
+.wrapper {
+    /* margin-top: 110px; */
+    height: 50vh;
+    width: 100%;
+    /* background-color: red; */
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.wrapper .item {
+    padding: 8px;
+    height: 300px;
+    width: 250px;
+    background-color: #4747e7;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 0 10px 1px #9b9bff;
+
+}
+
+.wrapper .item img {
+    height: 300px;
+    width: 250px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0px;
+    z-index: -1;
+}
+
+.wrapper .item .title {
+    width: 100%;
+    /* background-color: #ff4400c7; */
+    text-align: center;
+    border-radius: 10px;
+    line-height: 30px;
+    box-shadow: 0 0 20px black;
+    padding: 5px;
+    backdrop-filter: blur(20px);
+
+
+
+}
+
+.wrapper .item h3 {
+    color: wheat;
+    text-transform: uppercase;
+
+
+
+}
+
+
+
+
+.wrapper .item button {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.wrapper .item button a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    background-color: #4747e7;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.wrapper .item button a:hover {
+    background-color: orangered;
+    transition: 0.5s;
+}
+
+.wrapper .item button:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #4747e7; */
+
+}
+
+section h1 {
+    color: white;
+    text-transform: uppercase;
+    margin-top: 120px;
+    border-bottom: 5px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+
+}
+
+.wrapper .explore {
+    background: none;
+    outline: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* background-color: #4465d171; */
+    /* backdrop-filter: blur(10px); */
+    padding: 0 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.wrapper .explore i {
+    color: white;
+    font-size: 50px;
+}
+
+.wrapper .explore a {
+    /* background-color: red; */
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.wrapper .explore i:hover {
+    color: orangered;
+    transform: translateX(16px);
+    transition: 0.6s;
+}
+
+
+
+/* ======================================== footer =================================================== */
+
+
+
+footer .all {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    /* background-color: #242439; */
+    padding: 40px 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px 4px black;
+
+}
+
+.all .left {
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.all .left h1 a {
+    text-transform: uppercase;
+    font-weight: 900px;
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 3px;
+}
+
+.all .left p {
+    font-size: 13px;
+}
+
+.all .center {
+    display: flex;
+
+}
+
+.all .center li {
+    display: inline;
+    margin: 10px;
+
+}
+
+.all .center li a {
+    font-size: 15px;
+    color: gray;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+
+.all .center li :hover {
+    color: orangered;
+    transition: 0.5s;
+}
+
+.all .right button {
+    margin: 5px;
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+    padding-right: 10px;
+    cursor: pointer;
+
+}
+
+.all button i {
+    font-size: 25px;
+
+}
+
+.all .right button :hover {
+    color: #ce4c1d;
+    transform: translateY(-4px);
+    transition: 0.5s;
+
+
+}
+
+@media screen and (max-width : 740px) {
+    header {
+        position: relative;
+    }
+
+    .left-container li {
+        display: flex;
+
+    }
+
+    header .left-container {
+        margin-top: 10px;
+        flex-direction: column;
+        /* background-color: #fd8b39; */
+        flex-basis: 100%;
+
+    }
+
+    .left-container h1 a {
+        text-transform: uppercase;
+        font-weight: 900px;
+        color: white;
+        letter-spacing: 1px;
+        text-decoration: none;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    .left-content {
+        /* background-color: red; */
+        width: 80%;
+        height: 100%;
+        margin-top: 35%;
+
+    }
+
+    .right-content {
+        display: none;
+    }
+
+    .right-container {
+        width: 100%;
+        position: absolute;
+
+    }
+
+    .right-container .sign-in {
+        position: absolute;
+        right: 5%;
+    }
+
+    .right-container .search {
+        position: absolute;
+        left: 0%;
+        width: 150px;
+    }
+
+    footer .all {
+        height: 330PX;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .all .center li {
+        display: block;
+
+    }
+}
+
+@media screen and (min-width:740px) and (max-width: 1080px) {}
