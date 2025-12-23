@@ -228,6 +228,7 @@ header .left-container {
 }
 
 .wrapper .item .title {
+    transform: translateY(150px);
     width: 100%;
     /* background-color: #ff4400c7; */
     text-align: center;
@@ -237,16 +238,18 @@ header .left-container {
     padding: 5px;
     backdrop-filter: blur(20px);
 
-
-
 }
 
+
+
 .wrapper .item h3 {
-    color: wheat;
+    color: white;
     text-transform: uppercase;
+}
 
-
-
+.wrapper .item:hover.item .title {
+    transform: translateY(0px);
+    transition: 0.8s;
 }
 
 .wrapper .item button {
