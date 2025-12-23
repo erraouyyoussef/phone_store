@@ -159,12 +159,14 @@ header .left-container {
 
 
 section {
-    height: 100vh;
+    height: fit-content;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 0px;
 }
+
 
 section .container {
     margin-top: 100px;
@@ -177,10 +179,7 @@ section .container {
     border-radius: 20px;
     align-items: center;
     justify-content: center;
-
-
-
-
+    overflow: hidden;
 
 }
 
@@ -519,5 +518,6 @@ footer .all {
 
     }
 }
+
 
 @media screen and (min-width:740px) and (max-width: 1080px) {}
