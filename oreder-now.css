@@ -160,19 +160,33 @@ header .left-container {
 
 section {
     height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section .container {
     margin-top: 100px;
     height: 80%;
-    background-color: #5f1b1b;
+    /* background-color: #5f1b1b; */
     display: flex;
+    width: 80%;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px black;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+
+
+
+
 
 }
 
 .container .product_imgs {
-    background-color: red;
-    flex-basis: 40%;
+    /* background-color: red; */
+    flex-basis: 50%;
     padding: 10px;
     display: flex;
     justify-content: end;
@@ -187,7 +201,8 @@ section .container {
     align-content: center;
     overflow: hidden;
     border-radius: 10px;
-    border: solid white 2px;
+    box-shadow: 0 0 10px #ffffffc9;
+    border: solid 2px white;
 
 
 
@@ -196,7 +211,7 @@ section .container {
 .container .product_imgs .content {
     height: 500px;
     width: 400px;
-    background-color: black;
+    /* background-color: black; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -204,38 +219,46 @@ section .container {
     gap: 25px;
     border-radius: 10px;
 
+
 }
 
 .product_imgs .img img {
     width: 100%;
     object-fit: contain;
+
 }
 
 
 .sm-img {
     display: flex;
-    gap: 10px;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 15px;
     /* background-color: yellow; */
     height: 80px;
     width: 75%;
     align-items: center;
+
 }
 
 .sm-img img {
-    width: 65px;
-    border-radius: 10px;
+    width: 50px;
+    border-radius: 6px;
     object-fit: contain;
-    border: solid white 2px;
-
+    border: solid #ffffff91 2px;
 
 }
 
+.sm-img img:hover {
+    transform: translateY(-5px);
+    border: solid orangered 2px;
+    transition: 0.5s;
+    cursor: pointer;
+}
 
 
 .container .product_infos {
-    background-color: blue;
-    flex-basis: 60%;
+    /* background-color: blue; */
+    flex-basis: 50%;
     padding: 20px;
 }
 
@@ -245,9 +268,12 @@ section .container {
     gap: 10px;
 }
 
-.product_infos h2 {
+.product_infos h4 {
     text-transform: uppercase;
-    font-size: 20px;
+}
+
+.product_infos .price {
+    color: #00f500;
 }
 
 .product_infos form div {
@@ -271,6 +297,7 @@ section .container {
 .product_infos form div label:hover {
     outline: solid black 3px;
     opacity: 0.8;
+    cursor: pointer;
 }
 
 .product_infos form .orange {
@@ -303,11 +330,18 @@ section .container {
     color: white;
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 80%;
     padding: 12px 10px;
     border-radius: 5px;
-    outline: solid 2px wheat;
+    outline: solid 2px #ffffff91;
 
+}
+
+.product_infos .sm-info:hover {
+    outline: solid 2px white;
+    background-color: orangered;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 .container button {
@@ -319,7 +353,7 @@ section .container {
     text-transform: capitalize;
     letter-spacing: 2px;
     cursor: pointer;
-    width: 50%;
+    width: 80%;
 
 }
 

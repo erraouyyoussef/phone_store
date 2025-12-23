@@ -11,15 +11,10 @@ body {
     background-image: url("images/technology\ bg.jpg");
     /* background-color: black; */
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 
 }
 
-/* ======================================== header =================================================== */
-
-
-
+/* ==================================== header ====================================== */
 header {
     background-color: #24243956;
     width: 100%;
@@ -34,7 +29,6 @@ header {
     top: 0px;
     box-shadow: 0 0 20px 4px black;
     z-index: 2;
-
 
 }
 
@@ -65,8 +59,6 @@ header .right-container {
 .right-container .search:hover {
     border: solid 2px orangered;
     transition: 0.8s;
-
-
 }
 
 .search input::placeholder {
@@ -107,7 +99,6 @@ header .right-container {
 
 .sign-in button i {
     font-size: 25px;
-
 }
 
 .sign-in a {
@@ -118,6 +109,8 @@ header .right-container {
     display: inline;
 
 }
+
+
 
 .sign-in:hover {
     transform: translateX(8px);
@@ -143,6 +136,7 @@ header .left-container {
 
 }
 
+
 .left-container div a {
     text-decoration: none;
     color: white;
@@ -161,183 +155,84 @@ header .left-container {
     /* transform: translateY(-4px); */
 }
 
-.animation {
-    opacity: 0;
-    transform: translateY(-40px);
-    animation: move-side 0.7s linear forwards;
+/* ==================================== body ====================================== */
+
+
+body section {
+
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@keyframes move-side {
+section .content {
+    margin-top: 80px;
+    background-color: #ffffff15;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    height: 80%;
+    width: 80%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px black;
+    color: #ffffffe5;
+}
+
+section .content p {
+    text-align: start;
+    line-height: 30px;
+
+}
+
+section .content a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+section .content a:hover {
+    text-decoration: underline;
+}
+
+
+
+strong {
+    font-style: italic;
+}
+
+.animation {
+    opacity: 0;
+    /* transform: translateY(-60px); */
+    transform: scale(0.5);
+    animation: zoom-in 0.4s linear forwards;
+}
+
+@keyframes zoom-in {
     100% {
         opacity: 1;
-        transform: translateY(0px);
+        transform: scale(1);
     }
 }
 
 
-/* ======================================== body =================================================== */
 
 
 
+/* ==================================== footer ====================================== */
 
-.wrapper {
-    /* margin-top: 110px; */
-    height: 50vh;
-    width: 100%;
-    /* background-color: red; */
-    padding: 10px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.wrapper .item {
-    padding: 8px;
-    height: 300px;
-    width: 250px;
-    background-color: #4747e7;
-    border-radius: 10px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    box-shadow: 0 0 10px #ffffffc9;
-    border: solid 2px white;
-
-}
-
-.wrapper .item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 80px 2px blue;
-    transition: 0.5s;
-}
-
-
-.wrapper .item img {
-    height: 300px;
-    width: 250px;
-    object-fit: cover;
-    position: absolute;
-    bottom: 0px;
-    z-index: -1;
-}
-
-.wrapper .item .title {
-    width: 100%;
-    /* background-color: #ff4400c7; */
-    text-align: center;
-    border-radius: 10px;
-    line-height: 30px;
-    box-shadow: 0 0 20px black;
-    padding: 5px;
-    backdrop-filter: blur(20px);
-
-
-
-}
-
-.wrapper .item h3 {
-    color: wheat;
-    text-transform: uppercase;
-
-
-
-}
-
-
-
-
-.wrapper .item button {
-    background: none;
-    outline: none;
-    border: none;
-}
-
-.wrapper .item button a {
-    color: white;
-    text-decoration: none;
-    text-transform: capitalize;
-    font-weight: bold;
-    background-color: #4747e7;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-.wrapper .item button a:hover {
-    background-color: orangered;
-    transition: 0.5s;
-}
-
-.wrapper .item button:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* background-color: #4747e7; */
-
-}
-
-section h1 {
-    color: white;
-    text-transform: uppercase;
-    margin-top: 120px;
-    border-bottom: 5px solid white;
-    padding-bottom: 10px;
-    margin-bottom: 40px;
-
-}
-
-.wrapper .explore {
-    background: none;
-    outline: none;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    /* background-color: #4465d171; */
-    /* backdrop-filter: blur(10px); */
-    padding: 0 10px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-.wrapper .explore i {
-    color: white;
-    font-size: 50px;
-}
-
-.wrapper .explore a {
-    /* background-color: red; */
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
-
-}
-
-.wrapper .explore i:hover {
-    color: orangered;
-    transform: translateX(16px);
-    transition: 0.6s;
-
-}
-
-
-
-/* ======================================== footer =================================================== */
 
 
 
 footer .all {
-    margin-top: 120px;
     display: flex;
     justify-content: space-around;
     height: 200px;
@@ -412,7 +307,7 @@ footer .all {
 }
 
 .all .right button :hover {
-    color: #ce4c1d;
+    color: orangered;
     transform: translateY(-4px);
     transition: 0.5s;
 

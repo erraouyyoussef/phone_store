@@ -181,20 +181,21 @@ header .left-container {
 
 
 .wrapper {
-    /* margin-top: 110px; */
+    margin-top: 20px;
     height: 50vh;
     width: 100%;
     /* background-color: red; */
     padding: 10px;
     display: flex;
     justify-content: space-evenly;
+
 }
 
 .wrapper .item {
     padding: 8px;
     height: 300px;
     width: 250px;
-    background-color: #4747e7;
+    /* background-color: #4747e7; */
     border-radius: 10px;
     display: flex;
     align-items: flex-end;
@@ -209,9 +210,12 @@ header .left-container {
 
 .wrapper .item:hover {
     transform: translateY(-10px);
-    box-shadow: 0 0 80px 2px blue;
+    box-shadow: 0 0 80px 1px blue;
     transition: 0.5s;
 }
+
+
+
 
 
 .wrapper .item img {
@@ -244,9 +248,6 @@ header .left-container {
 
 
 }
-
-
-
 
 .wrapper .item button {
     background: none;
@@ -293,42 +294,6 @@ section h1 {
 
 }
 
-.wrapper .explore {
-    background: none;
-    outline: none;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    /* background-color: #4465d171; */
-    /* backdrop-filter: blur(10px); */
-    padding: 0 10px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-.wrapper .explore i {
-    color: white;
-    font-size: 50px;
-}
-
-.wrapper .explore a {
-    /* background-color: red; */
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
-
-}
-
-.wrapper .explore i:hover {
-    color: orangered;
-    transform: translateX(16px);
-    transition: 0.6s;
-
-}
 
 
 
@@ -337,7 +302,7 @@ section h1 {
 
 
 footer .all {
-    margin-top: 120px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-around;
     height: 200px;
