@@ -7,7 +7,7 @@
 }
 
 body {
-    height: 100vh;
+    height: fit-content;
     background-image: url("images/technology\ bg.jpg");
     /* background-color: black; */
     background-size: cover;
@@ -159,12 +159,13 @@ header .left-container {
 
 
 body section {
-
-    height: 100%;
+    margin: 55px 0;
+    min-height: fit-content;
     /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 section .content {
@@ -172,7 +173,7 @@ section .content {
     background-color: #ffffff15;
     backdrop-filter: blur(10px);
     border-radius: 20px;
-    height: 80%;
+    height: fit-content;
     width: 80%;
     padding: 50px;
     display: flex;
@@ -183,6 +184,7 @@ section .content {
     text-align: center;
     box-shadow: 0 0 20px black;
     color: #ffffffe5;
+    /* overflow: hidden; */
 }
 
 section .content p {
